@@ -1,9 +1,9 @@
 import re
 
-myFile = open(input(),'r',encoding='utf8')
-str_book = myFile.read()
-str_x = re.sub(r'[^\w\s]','',str_book)
-str_x = str_x.split()
+with open(input(),'r',encoding='utf8') as myFile:
+    str_book = myFile.read()
+    str_x = re.sub(r'[^\w\s]','',str_book)
+    str_x = str_x.split()
 
 
 n = 1
@@ -39,4 +39,4 @@ for i in range(len(ing_book)):
 
 print(f'Cамое длинное английское слово: {ing_book[max]}')  
 
-myFile.close()
+
