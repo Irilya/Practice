@@ -17,3 +17,5 @@ class TestCalc:
 
     def test_adding_calculate_correctly(self):
         assert self.calc.adding(self, 6, 2) == 8
+        
+        
